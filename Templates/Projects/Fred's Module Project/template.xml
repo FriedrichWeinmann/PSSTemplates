@@ -1,0 +1,17 @@
+<Template>
+	<ProjectFile>Module Project.psproj</ProjectFile>
+	<Description>Creates a PowerShell script module in Fred Style.</Description>
+  	<Company>Friedrich Weinmann</Company>
+	<Files>
+		<File rename="true">Module.psd1</File>
+		<File rename="true">Module.psm1</File>
+		<File rename="true">Module Project.psprojs</File>
+		<File rename="false">about_Module.help.txt</File>
+		<File rename="false">preimport.ps1</File>
+		<File rename="false">postimport.ps1</File>
+		<File rename="false">pester.ps1</File>
+		<File rename="false">modulebase.ps1</File>
+		<File rename="false">example-configuration.ps1</File>
+	</Files>
+	<ProjectType>1</ProjectType>
+</Template>

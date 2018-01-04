@@ -1,0 +1,11 @@
+TOPIC
+	about_%ProjectName%
+	
+SHORT DESCRIPTION
+	Explains how to use the %ProjectName% powershell module
+	
+LONG DESCRIPTION
+	<Insert Content here>
+
+KEYWORDS
+	%ProjectName%
