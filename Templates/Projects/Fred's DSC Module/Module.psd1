@@ -21,7 +21,7 @@
 	Copyright = '(c) %Year% %Username%. All rights reserved.'
 
 	# Description of the functionality provided by this module
-	# Description = ''
+	Description = ''
 
 	# Minimum version of the Windows PowerShell engine required by this module
 	PowerShellVersion = '5.0'
