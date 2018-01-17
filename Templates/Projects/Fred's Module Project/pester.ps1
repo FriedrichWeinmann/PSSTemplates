@@ -10,7 +10,7 @@ if ($env:BUILD_BUILDURI -like "vstfs*")
 	Install-Module PSFramework -Force -SkipPublisherCheck
 }
 
-Write-PSMessage -Level Important -Message "Importing Module"
+Write-PSFMessage -Level Important -Message "Importing Module"
 
 Remove-Module %ProjectName% -ErrorAction Ignore
 Import-Module "$PSScriptRoot\..\%ProjectName%.psd1"
