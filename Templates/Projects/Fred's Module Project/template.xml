@@ -12,6 +12,14 @@
 		<File rename="false">pester.ps1</File>
 		<File rename="false">modulebase.ps1</File>
 		<File rename="false">example-configuration.ps1</File>
+		<File rename="false">FileIntegrity.Exceptions.ps1</File>
+		<File rename="false">FileIntegrity.Tests.ps1</File>
+		<File rename="false">Help.Exceptions.ps1</File>
+		<File rename="false">Help.Tests.ps1</File>
+		<File rename="false">manifest.Tests.ps1</File>
+		<File rename="false">PSScriptAnalyzer.Tests.ps1</File>
+		<File rename="false">tests-functions-readme.md</File>
+		<File rename="false">tests-readme.md</File>
 	</Files>
 	<ProjectType>1</ProjectType>
 </Template>
