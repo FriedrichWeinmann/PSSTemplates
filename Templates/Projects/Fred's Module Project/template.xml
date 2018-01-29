@@ -20,6 +20,7 @@
 		<File rename="false">PSScriptAnalyzer.Tests.ps1</File>
 		<File rename="false">tests-functions-readme.md</File>
 		<File rename="false">tests-readme.md</File>
+		<File rename="false">license.ps1</File>
 	</Files>
 	<ProjectType>1</ProjectType>
 </Template>

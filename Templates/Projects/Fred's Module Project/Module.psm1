@@ -20,6 +20,7 @@ $null = New-Item xml -ItemType Directory
 Move-Item -Path ".\about_Module.help.txt" -Destination "en-us\about_$ProjectName.help.txt"
 Move-Item -Path preimport.ps1 -Destination .\internal\scripts\
 Move-Item -Path postimport.ps1 -Destination .\internal\scripts\
+Move-Item -Path license.ps1 -Destination .\internal\scripts\
 Move-Item -Path example-configuration.ps1 -Destination .\internal\configurations\
 Move-Item -Path pester.ps1 -Destination .\tests\
 Move-Item -Path tests-readme.md -Destination .\tests\readme.md
