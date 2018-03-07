@@ -41,7 +41,6 @@
 	
 		<insert description for remote execution from AD Computer>
 #>
-	[OutputType([Fred.IronScripter2018.SystemInformation])]
 	[CmdletBinding()]
 	Param (
 		[Parameter(ValueFromPipeline = $true)]
@@ -61,7 +60,7 @@
 	
 	begin
 	{
-		Write-PSFMessage -Level InternalComment -Message "Bound parameters: $($PSBoundParameters.Keys -join ', ')" -Tag 'debug'
+		Write-PSFMessage -Level InternalComment -Message "Bound parameters: $($PSBoundParameters.Keys -join ", ")" -Tag 'debug','start','param'
 	}
 	process
 	{
