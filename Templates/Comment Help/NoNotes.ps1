@@ -1,4 +1,4 @@
-	<#
+﻿	<#
 		.SYNOPSIS
 			A brief description of the %NAME% %TARGETTYPE%.
 		.DESCRIPTION

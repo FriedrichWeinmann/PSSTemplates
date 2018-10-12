@@ -1,0 +1,5 @@
+﻿<Template version="1.0" type="File" tags="PowerShell">
+  <Description>Creates a command designed to wrap around a CIM query</Description>
+  <Creator>Friedrich Weinmann</Creator>
+  <Company>Infernal Associates Ltd.</Company>
+</Template>

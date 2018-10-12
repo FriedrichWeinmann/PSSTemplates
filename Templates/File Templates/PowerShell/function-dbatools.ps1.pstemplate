@@ -1,0 +1,5 @@
+﻿<Template version="1.0" type="File" tags="PowerShell">
+  <Description>Creates a dbatools command</Description>
+  <Creator>Friedrich Weinmann</Creator>
+  <Company>Infernal Associates Ltd.</Company>
+</Template>
