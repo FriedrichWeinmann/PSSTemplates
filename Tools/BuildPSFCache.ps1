@@ -84,14 +84,19 @@ function New-PSSModuleCache
 	}
 }
 
-$modules = 'PSFramework', 'PSUtil', 'PSModuleDevelopment', 'PSJukebox'
+$modules = 'PSFramework', 'PSUtil', 'PSModuleDevelopment', 'PSJukebox', 'Pester', 'MailDaemon'
 foreach ($module in $modules)
 {
 	Import-Module $module
 	$cacheData = Get-Module $module | New-PSSModuleCache
+	$aliases = Get-Alias | Where-Object Source -eq $module | Select-PSFPropertyValue -Property Name, ResolvedCommand -FormatWith "{0} {1}"
 	$moduleObject = Get-Module $module
 	$baseName = 'C:\ProgramData\SAPIEN\PresetCache 2.1\ModuleCacheV5\{0}.{1}' -f $moduleObject.Name, $moduleObject.Version
 	
 	$cacheData.Commands | Set-Content -Path "$baseName.cmdlets"
-	$cacheData.Aliases | Set-Content -Path "$baseName.alias"
+	$aliases | Set-Content -Path "$baseName.alias"
+	
+	$baseName = '{0}\SAPIEN\CachedData 2.1\Local Machine\PowerShell64V5' -f $env:AppData
+	$cacheData.Commands | Add-Content -Path "$baseName.Cmdlet.Cache"
+	$aliases | Add-Content -Path "$baseName.Alias.Cache"
 }
