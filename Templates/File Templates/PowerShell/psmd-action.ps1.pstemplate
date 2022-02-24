@@ -1,5 +1,5 @@
 ﻿<Template version="1.0" type="File" tags="PowerShell">
-  <Description>Creates a PSFramework strings file</Description>
+  <Description>Creates a PSModuleDevelopment Build Action Script</Description>
   <Creator>Friedrich Weinmann</Creator>
   <Company>Infernal Associates Ltd.</Company>
 </Template>
